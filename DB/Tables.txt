@@ -1,0 +1,61 @@
+create table NavBar (
+	id int PRIMARY KEY,
+	nav_bar_name varchar(30)
+);
+
+create table NavBarItems (
+	id int PRIMARY KEY,
+	nav_bar_id int NOT NULL,
+	item_name varchar(30) NOT NULL,
+	position int NOT NULL,
+	visible boolean NOT NULL,
+	FOREIGN KEY (nav_bar_id) REFERENCES NavBar (id)
+);
+
+create table Pages (
+	id int PRIMARY KEY,
+	nav_bar_item_id int NOT NULL,
+	page_title varchar(50) NOT NULL,
+	page_content text,
+	page_image int,
+	position int NOT NULL,
+	visible boolean NOT NULL,
+	FOREIGN KEY (nav_bar_item_id) REFERENCES NavBarItems (id),
+	FOREIGN KEY (page_image) REFERENCES Images (id)
+);
+
+create table Images (
+	id int PRIMARY KEY,
+	file_name varchar(50) NOT NULL,
+	file_type varchar(50) NOT NULL,
+	file_size int NOT NULL
+);
+
+create table Dishes (
+	id int PRIMARY KEY,
+	dish_name varchar(50) NOT NULL,
+	dish_description text NOT NULL,
+	dish_price float NOT NULL,
+	image_id int NOT NULL,
+	nav_bar_item_id int NOT NULL,
+	FOREIGN KEY (image_id) REFERENCES Images (id),
+	FOREIGN KEY (nav_bar_item_id) REFERENCES NavBarItems (id)
+);
+
+
+create table Comments (
+	id int PRIMARY KEY,
+	comment_author_name varchar(50) NOT NULL,
+	comment text NOT NULL,
+	dish_id int NOT NULL,
+	FOREIGN KEY (dish_id) REFERENCES Dishes (id)
+);
+
+create table Users (
+	id int PRIMARY KEY,
+	username varchar(20) NOT NULL,
+	password varchar(40) NOT NULL,
+	first_name varchar(50) NOT NULL,
+	last_name varchar(30) NOT NULL,
+	email varchar(50) NOT NULL
+);

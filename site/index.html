@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en"><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" ><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,27 +9,217 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 
 <link href="css/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/Bootstrap-Image-Gallery-3/css/bootstrap-image-gallery.min.css">
+
+<link rel="stylesheet" href="css/foundation5/css/normalize.css">
+<link rel="stylesheet" href="css/foundation5/css/foundation.min.css">
+
+<link href="css/Hover-master/css/hover-min.css" rel="stylesheet" type="text/css" media="all">
+
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/fonts/samarkan/style.css">
 <link href="css/custom.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/lightbox/css/lightbox.css">
+
+<script src="css/lightbox/js/jquery-1.11.0.min.js"></script>
+<script src="css/lightbox/js/lightbox.min.js"></script>
+
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<script src="css/foundation5/js/vendor/modernizr.js"></script>
 </head>
 
 <body>
 <div id="background">
-<img id="bg-img" src="images/background.jpg" />
+<img id="bg-img" alt="background image" src="images/background.jpg" />
 </div> 
 <a id="top"></a>
 
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-logo clearfix visible-xs" href="index.html"><img class="navbar-logo-img img-responsive" src="images/logo-small.jpg" alt="Logo"></a>      
+      <span class="visible-xs" id="site-title">India Garden Restaurant</span>
+      <a class="navbar-brand navbar-logo clearfix hidden-xs" href="index.html"><img class="navbar-logo-img img-responsive" src="images/logo.jpg" alt="Logo"></a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        <!-- InstanceBeginEditable name="ActiveMenuItem" -->
+          <li class="active"><a href="index.html" class="btn btn-primary">Home</a></li>
+          <li><a href="menu.html" class="btn btn-primary">Menu</a></li>
+          <li><a href="about.html" class="btn btn-primary">About Us</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+        <!-- InstanceEndEditable -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-<!-- InstanceBeginEditable name="BodyText" -->Body Text<!-- InstanceEndEditable -->
+<div id="title" class="clearfix hidden-xs">
+<p id="title-text">India Garden Restaurant</p>
+</div>
+
+<!-- InstanceBeginEditable name="ImageSlider" -->
+<div id="image-slider">
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<ul class="orbit-slider" data-orbit data-options="pause_on_hover:false; animation_speed:300;">
+  <li class="active">
+    <img src="images/image-slider/1-IndiaGarden.jpg" alt="India Garden outdoors">
+    <div class="orbit-caption">
+      India Garden Outdoors
+    </div>
+  </li>
+  <li>
+    <img src="images/image-slider/2-GulabJamun.jpg" alt="Gulab Jamun">
+    <div class="orbit-caption">
+      Gulab Jamun dessert
+    </div>
+  </li>
+  <li>
+    <img src="images/image-slider/3-Customer.jpg" alt="Customer Satisfaction">
+    <div class="orbit-caption">
+      Customer Satisfaction
+    </div>
+  </li>
+  <li>
+    <img src="images/image-slider/4-dishes.jpg" alt="Dishes 1">
+  </li>
+  <li>
+    <img src="images/image-slider/5-dishes.jpg" alt="Dishes 2">
+  </li>
+  <li>
+    <img src="images/image-slider/6-Owner.jpg" alt="Owner">
+    <div class="orbit-caption">
+      Owner, Rakesh K
+    </div>
+  </li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-8 about-ig">
+<div class="panel-foundation radius">
+<h3>Best Food in Town</h3>
+<p>India Garden Restaurant is one of the finest Indian restaurants in the city of Bloomington,IN. After the success in Cincinati, Ohio we came knocking on the doors of the college town. We are located in the downtown area. Come explore the India inside us.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+
+<div id="main-content">
+<!-- InstanceBeginEditable name="BodyText" -->
+<div>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Order Online</h3>
+  </div>
+  <div class="panel-body">
+  	    <a href="menu.html" class="button tiny radius order-online-menu-buttons" id="menu-button">Online Menu</a>
+  	    <a href="images/IndiaGardenMenu.pdf" class="button tiny radius order-online-menu-buttons" id="pdf-menu-button" target="_blank">PDF Menu</a>
+        <div class="order-online">
+  <div class="order-online-text">
+        <h4>Delivery Hours</h4>
+        <div class="timings">
+        <h5>Mon - Sat hours:</h5>
+        <div class="hours">
+        <h6>	10:45 AM - 3:00 PM</h6>
+        <h6>	4:30 PM - 10:00 PM</h6>
+        </div>
+		<h5>Sun hours:</h5>
+        <div class="hours">
+        <h6>	10:45 AM - 10:00 PM</h6>
+        </div>
+        </div>
+        <h5><strong>Phone:</strong> (812) 331-8844</h5>
+  </div>
+  		</div>
+        <a href="https://btownmenus.com/restaurants/india-garden/" class="button tiny radius order-online-menu-buttons" id="btmenus-button" target="_blank">Order@ btownmenus</a>
+  	    <a href="https://s2yd.com/menu/bloomington/india-garden" class="button tiny radius order-online-menu-buttons" id="s2yd-button" target="_blank">Order@ s2yd</a>
+
+  </div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-8 about-ig">
+<div class="panel-foundation radius">
+<h3>Glimpse of Our Menu</h3>
+<p>India Garden has made it's presence felt by serving north indian food to our valuable customers. Our impressive menu includes appetizers, rice, naan, chicken dishes, vegetarian curries, desserts and salads. The real secret of our exqusite cuisines is the spices and herbs, which enhance the flavor and also pose medicinal qualities.</p>
+</div>
+<div class="panel-foundation radius">
+<h3>Restaurant Reviews</h3>
+<blockquote>
+<p>Genuinely nice service, and also fast. Nice atmosphere. Delicious food. It will be one of our regular haunts from now on.</p>
+<footer>Charles Wines</footer>
+</blockquote>
+<blockquote>
+<p>Awesome Food, Nice Service!  Must Eat: Butter Chicken and Aloo Paratha (Tastes Like Home)</p>
+<footer>jasleen singh</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</div>
+
 	
+<div id="footer">
+<div class="row">
+<div class="col-xs-12 col-sm-7 to-left">
+<a href="https://www.facebook.com/IndiaGardenRestaurant" target="_blank"><img class="footer-image" src="images/links/sm_fb.png" alt="fb link"></a>
+<a href="https://plus.google.com/116199562205467728761/about" target="_blank"><img class="footer-image" src="images/links/sm_gp.png" alt="gp link"></a>
+<a href="http://www.yelp.com/biz/india-garden-bloomington" target="_blank"><img class="footer-image" src="images/links/yelp.png" alt="yelp link"></a>
+</div>
+<div class="col-xs-12 col-sm-5"> &nbsp;
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-7 footer-text">
+ &copy; Copyright <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> India Garden Restaurant. All Rights Reserved.
+</div>
+<div class="col-xs-12 col-sm-5 footer-text">
+<span id="name">Site designed by <em>Siddhardha Raju Mandapati</em></span>
+</div>
+</div>
+</div>
+ 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="css/bootstrap3/js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
+
+<script src="css/foundation5/js/vendor/jquery.js"></script>
+<script src="css/foundation5/js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+
+<script src="css/Bootstrap-Image-Gallery-3/js/bootstrap-image-gallery.min.js"></script>
+
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
 </body>
 <!-- InstanceEnd --></html>
